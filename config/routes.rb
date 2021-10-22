@@ -14,7 +14,7 @@ Rails.application.routes.draw do
 
   # /restaurants/restaurant_id/reviews
   resources :restaurants, except: [:new, :create, :index, :show, :edit, :update, :destroy] do
-    resources :reviews, only: [ :index, :new, :create ]
+    resources :reviews, only: [ :new, :create ]
   end
 
 end
